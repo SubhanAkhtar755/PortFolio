@@ -386,14 +386,15 @@
         <span>Ask Me Question</span>
         <h2>Contact Me</h2>
     </div>
-<form action="#" class="scroll-bottom" >
-    <input type="text" placeholder="Your Name" disabled>
-    <input type="text" placeholder="Your Email" disabled>
-    <input type="text" placeholder="Your Address" disabled>
+<form action="#" class="scroll-bottom" name="submit-to-google-sheet">
+    <input type="text" name="Name" placeholder="Your Name" >
+    <input type="text" name="Email" placeholder="Your Email" >
+    <input type="text"  placeholder="Your Address" disabled>
     <input type="text" placeholder="Phone Number" disabled>
-    <textarea name="" id="" cols="30" rows="10" placeholder="Your Message" disabled></textarea>
+    <textarea name="Message" id="" cols="30" rows="10" placeholder="Your Message" ></textarea>
     <div class="btn-box formBtn">
-<button type="button" class="btn" onclick="contactform()">Send Message</button>
+<button type="submit" class="btn" onclick="contactform()">Send Message</button>
+<span id="Msg"></span>
     </div>
 </form>
 
@@ -403,6 +404,33 @@
     <p class="scroll-scale">Copyright &copy; 2025 by M.Subhan || All Right Reserved.</p>
     <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
 </footer>
+
+
+
+
+
+
+<script>
+    const scriptURL =
+      "https://script.google.com/macros/s/AKfycbxYYvl-4Qcxt6zDJ9gp3TrbTRqDVWysYienmJe0-t67eKTeAhyzf9wMV3xuwPH6SGD4/exec";
+    const form = document.forms["submit-to-google-sheet"];
+    const Msg = document.getElementById("Msg")
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      fetch(scriptURL, { method: "POST", body: new FormData(form) })
+        .then((response) => {
+          Msg.innerHTML = "Message Sent Successfully"
+          setTimeout(function () {
+            Msg.innerHTML = ""
+          }, 3000)
+          form.reset();
+        })
+        .catch((error) => console.error("Error!", error.message));
+    });
+  </script>
+
+
+
 
 
 

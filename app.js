@@ -167,14 +167,14 @@ scrollTop.forEach((el)=>observer.observe(el));
 // }
 
 
-let contactform = ()=>{
-    let alertswal = Swal.fire({
-        title: "Contact Page Not Working",
-        text: "Please Contact On Number , Whatsapp And Other Social Media Platforms!",
-        icon: "info"
-      });
-   contactform1 = alertswal === true ?  alertswal : alertswal;
-    };
+// let contactform = ()=>{
+//     let alertswal = Swal.fire({
+//         title: "Contact Page Not Working",
+//         text: "Please Contact On Number , Whatsapp And Other Social Media Platforms!",
+//         icon: "info"
+//       });
+//    contactform1 = alertswal === true ?  alertswal : alertswal;
+//     };
 
 let hireme = ()=>{
 
