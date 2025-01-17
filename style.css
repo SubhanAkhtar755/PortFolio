@@ -1069,7 +1069,7 @@ transform: translate(0);
     }
 
     footer p {
-        font-size: .8rem;
+        font-size: .6rem ;
     }
 }
 
@@ -1084,9 +1084,7 @@ transform: translate(0);
         font-size: 80%;
     }
 
-    footer p {
-        font-size: .6rem;
-    }
+   
 
     .filter-buttons .button {
         font-size: .8rem;
@@ -1106,4 +1104,8 @@ transform: translate(0);
     .img-about p {
         font-size: 1rem;
     }
+    footer{
+        display: none;
+    
+     }
 }
