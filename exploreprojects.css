@@ -34,7 +34,7 @@ body{
     font-family: 'poppins' , sans-serif;
     background-color: var(--bg-color);
     color: var(--text-color);
-  
+ 
 }
 
 .main-text{
@@ -166,12 +166,13 @@ outline: 2px solid var(--text-color);
 }
 /* footer section */
 footer {
-
     padding: .5rem 10%;
     display: flex;
     align-items: center;
     justify-content: space-between;
 background-color: var(--secon-bg-color);
+margin-top: 25px;
+width: 100%;
 }
 
 footer p {
