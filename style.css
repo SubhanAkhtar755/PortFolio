@@ -539,23 +539,29 @@ section {
 
 .skill-bar .bar .html {
     width: 72%;
-    animation: html 2s;
+    animation: html 4s ;
 }
 
 .skill-bar .bar .CSS {
     width: 80%;
-    animation: CSS 3s;
+    animation: CSS 6s ;
 }
 
 .skill-bar .bar .JavaScript {
     width: 90%;
-    animation: JavaScript 4s;
+    animation: JavaScript 7s;
 }
 
 .skill-bar .bar .Figma {
     width: 60%;
-    animation: Figma 5s;
+    animation: Figma 8s ;
 }
+
+
+
+
+
+
 
 .professional {
     display: grid;
