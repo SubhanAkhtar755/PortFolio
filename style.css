@@ -1104,8 +1104,10 @@ transform: translate(0);
     .img-about p {
         font-size: 1rem;
     }
-    footer{
-        display: none;
-    
-     }
+    .info-box {
+        width: 340px;
+    }
+    .btn-box { 
+        width: 320px;
+    }
 }
