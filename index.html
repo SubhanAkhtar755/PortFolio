@@ -387,15 +387,16 @@
         <h2>Contact Me</h2>
     </div>
 <form action="#" class="scroll-bottom" name="submit-to-google-sheet">
-    <input type="text" name="Name" placeholder="Your Name" >
-    <input type="text" name="Email" placeholder="Your Email" >
-    <input type="text"  placeholder="Your Address" disabled>
+    <input type="text" name="Name" placeholder="Your Name" required>
+    <input type="text" name="Email" placeholder="Your Email" required>
+    <input type="text"  placeholder="Your Address" disabled >
     <input type="text" placeholder="Phone Number" disabled>
-    <textarea name="Message" id="" cols="30" rows="10" placeholder="Your Message" ></textarea>
+    <textarea name="Message" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
     <div class="btn-box formBtn">
-<button type="submit" class="btn" onclick="contactform()">Send Message</button>
-<span id="Msg"></span>
+<button type="submit" class="btn" /*onclick="contactform()"*/ required>Send Message</button>
+
     </div>
+    <div id="Msg"></div>
 </form>
 
 </section>
@@ -419,7 +420,7 @@
       e.preventDefault();
       fetch(scriptURL, { method: "POST", body: new FormData(form) })
         .then((response) => {
-          Msg.innerHTML = "Message Sent Successfully"
+          Msg.innerHTML = "Message Sent Successfully!"
           setTimeout(function () {
             Msg.innerHTML = ""
           }, 3000)

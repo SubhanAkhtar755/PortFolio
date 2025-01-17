@@ -759,6 +759,12 @@ section {
 
 
 /* <!-- contact section --> */
+
+#Msg{
+color: green;
+}
+
+
 .contact {
     background: var(--secon-bg-color);
     width: 100%;
