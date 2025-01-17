@@ -44,7 +44,7 @@ let portfolioArray = [
              classadd:"Interacting"
         },/* 7 ------------------------ */
         {
-            img: "project images/try.jpg",
+            img: "project images/Beginneres Portfolio Website1.jpg",
             title: "Beginneres Portfolio Website",
             description: "Please Visit This.",
              live:"https://idyllic-gumdrop-eea2c2.netlify.app/",
