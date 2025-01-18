@@ -144,7 +144,30 @@ animation: rocket 4s linear infinite;
         font-weight: normal;
       }
 }
-
+@media only screen and (max-width: 294px){
+    .content h1 {
+        font-size: 22px;
+        font-weight: 1900;
+        margin-bottom: 20px;
+       
+    }
+    .content>p{
+       color: rgb(5, 240, 119);
+       font-weight: 900;
+    }
+    .launch-time div p{
+        font-size: 30px;
+        margin-bottom: -04px;
+      }
+      .launch-time div{
+        flex-basis: 100px;
+    }
+    .launch-time span{
+        font-size: 15px;
+        margin-bottom: -04px;
+        font-weight: normal;
+      }
+}
 
 
 
