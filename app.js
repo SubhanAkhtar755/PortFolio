@@ -155,7 +155,17 @@ scrollBottom.forEach((el)=>observer.observe(el));
 const scrollTop= document.querySelectorAll(".scroll-top");
 scrollTop.forEach((el)=>observer.observe(el));
 
-/*  contact form --------------------------- */
+
+
+
+
+
+
+
+
+
+
+  // ! contact section ---------------------------------------------------------->>>>>> // 
 // let contactform = ()=>{
 // if(true){
 //     Swal.fire({
@@ -166,7 +176,7 @@ scrollTop.forEach((el)=>observer.observe(el));
 // }
 // }
 
-
+  // ! contact section ---------------------------------------------------------->>>>>> // 
 // let contactform = ()=>{
 //     let alertswal = Swal.fire({
 //         title: "Contact Page Not Working",
@@ -184,10 +194,20 @@ let hireswal = Swal.fire("If any company hires me, they must contact me on Whats
     hireme1 = hireswal === true ? hireswal : hireswal ;
 }
 
-let cv = ()=>{
 
-    let cvswal = Swal.fire("This feature is UnAvailable!");
+
+
+
+
+
+
+
+
+        // ! cv section ---------------------------------------------------------->>>>>> // 
+// let cv = ()=>{
+
+//     let cvswal = Swal.fire("This feature is UnAvailable!");
     
     
-        cv1 = cvswal === true ? cvswal : cvswal ;
-    }
+//         cv1 = cvswal === true ? cvswal : cvswal ;
+//     }
