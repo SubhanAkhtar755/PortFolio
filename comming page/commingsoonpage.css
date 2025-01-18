@@ -66,12 +66,18 @@
     display: flex;
 }
 .launch-time div{
-    flex-basis: 150px;
+    flex-basis: 200px;
 }
 .launch-time div p{
   font-size: 60px;
-  margin-bottom: -14px;
+  margin-bottom: -04px;
+  font-weight: 900;
 }
+.launch-time span{
+    font-size: 40px;
+    margin-bottom: -04px;
+    font-weight: 400;
+  }
 .rocket{
     width: 250px;
      position: absolute;
@@ -90,7 +96,30 @@ animation: rocket 4s linear infinite;
         opacity: 1;
      }
 }
-
+@media only screen and (max-width: 458px){
+    .content h1 {
+        font-size: 24px;
+        font-weight: 900;
+        margin-bottom: 20px;
+       
+    }
+    .content>p{
+       color: rgb(5, 240, 119);
+       font-weight: 900;
+    }
+    .launch-time div p{
+        font-size: 30px;
+        margin-bottom: -04px;
+      }
+      .launch-time div{
+        flex-basis: 100px;
+    }
+    .launch-time span{
+        font-size: 15px;
+        margin-bottom: -04px;
+        font-weight: normal;
+      }
+}
 
 
 
