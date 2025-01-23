@@ -48,6 +48,7 @@ body {
     font-family: 'poppins', sans-serif;
     background-color: var(--bg-color);
     color: var(--text-color);
+    cursor: none;
 }
 
 header {
@@ -853,6 +854,45 @@ footer a i {
     opacity: 1;
 transform: translate(0);
 }
+
+/* cursor css*/
+
+
+
+.cursor-dot{
+    width: 5px;
+    height: 5px;
+    background-color: white;
+  
+}
+.cursor-outline{
+    width: 30px;
+    height: 30px;
+   
+  border: 2px solid hsla(0, 0%, 100%, 0.5);
+
+}
+.cursor-dot,.cursor-outline{
+     position: fixed;
+     top: 0;
+     left: 0;
+     transform: translate(-50%, -50%);
+     border-radius: 50%;
+     z-index: 1;
+     pointer-events: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*   key frames -------------------------------------------->*/
